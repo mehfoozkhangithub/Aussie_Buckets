@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom'
 
 import logo  from '../Utils/Logo.svg'
 import file from '../Utils/file.png'
+import hams from '../Utils/ham.jpg'
 
 
 export const Navbar = () => {
   return (
     <>
-    <header className='flex sticky top-0 mx-auto items-center justify-between '>
+    <header className='flex sticky top-0 mx-auto items-center justify-between  '>
         <div className="logo">
             <img src={logo} className='my-8 mx-32 h-16'  />
         </div>
-        <div className="ul flex items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  " >
+        <div className="ul  items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  hidden md:flex " >
           <li>
            <Link to="/">Product</Link>
           </li>
@@ -32,8 +33,12 @@ export const Navbar = () => {
     <button >Quick Quate <i class="fa-solid fa-arrow-right mx-1" ></i></button>
      </div>
           
-          <img src={file} alt="" className='w-12 h-9' />
+          <img src={file} alt="" className='w-12 h-9 ' />
         </div>
+        
+        
+          <img src={hams} alt="" className='w-10  md:hidden block text-5xl cursor-pointer' />
+        
 
    
          
