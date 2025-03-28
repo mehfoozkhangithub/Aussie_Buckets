@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import logo  from '../Utils/Logo.svg'
-import harm from '../Utils/ham.webp'
+import file from '../Utils/file.png'
 
 
 export const Navbar = () => {
@@ -10,9 +10,9 @@ export const Navbar = () => {
     <>
     <header className='flex sticky top-0 mx-auto items-center justify-between '>
         <div className="logo">
-            <img src={logo} className='my-10 mx-30'  />
+            <img src={logo} className='my-8 mx-32 h-16'  />
         </div>
-        <div className="ul flex items-center mr-25  list-none text-[19px] gap-8" >
+        <div className="ul flex items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  " >
           <li>
            <Link to="/">Product</Link>
           </li>
@@ -25,18 +25,21 @@ export const Navbar = () => {
           <li>
            <Link to="/">Why AB? </Link>
           </li>
-    <div className="bt w-38  bg-yellow-300 p-3 text-[19px] rounded-sm">
-    <button>Quick Quate <i class="fa-solid fa-arrow-right "></i></button>
+          <li>
+           <Link to="/">Contact </Link>
+          </li>
+    <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-7">
+    <button >Quick Quate <i class="fa-solid fa-arrow-right mx-1" ></i></button>
      </div>
           
-          <img src={harm} alt="" className='w-12' />
+          <img src={file} alt="" className='w-12 h-9' />
         </div>
 
    
          
       
     </header>
-    <div className="boundries">
+    <div className="boundries w-full h-1  bg-yellow-300">
       
     </div>
     </>
