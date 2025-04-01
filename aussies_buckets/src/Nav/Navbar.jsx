@@ -23,7 +23,7 @@ export const Navbar = () => {
            <Link to="/" >Industries</Link>
           </li>
           <li>
-           <Link to="/" > Testimonials</Link>
+           <Link to='/testi' > Testimonials</Link>
           </li>
           <li>
            <Link to="/">Why AB? </Link>
@@ -50,7 +50,7 @@ export const Navbar = () => {
            <Link to="/" >Industries</Link>
           </li>
           <li className='list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>
-           <Link to="/" > Testimonials</Link>
+           <Link to="/testi" > Testimonials</Link>
           </li>
           <li className='list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer'>
            <Link to="/">Why AB? </Link>
