@@ -14,7 +14,7 @@ export const Whyab = () => {
       </div>
 
       <div className="img-part w-full h-200 bg-grayscale">
-        <img src={homie} alt="" className='w-full h-200 grayscale brightness-40 '/>
+        <img src={homie} alt="" className='w-full h-200 grayscale brightness-40 mix-blend-color-burn'/>
         
       </div>
     </>
