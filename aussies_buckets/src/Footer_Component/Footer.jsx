@@ -4,7 +4,7 @@ import footie from "../assets/Footer.png"
 const Footer = () => {
     return (
         <>
-            <div className='bg-black w-full h-500 text-white mr-10 '  >
+            <div className='bg-black w-full h-200 text-white mr-10 '  >
 
                 <div className="part pt-25 w-100%  flex justify-evenly">
 

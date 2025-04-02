@@ -1,5 +1,7 @@
 import React from 'react'
 import homie from "../assets/Homeabt.svg"
+import MBI from "../assets/MBI.png"
+import Daemo from "../assets/Daemo.png"
 
 
 export const Whyab = () => {
@@ -21,6 +23,50 @@ export const Whyab = () => {
         </div>
        
     </div>
+
+
+      <div className="partners bg-[rgb(198,196,196)] h-200 w-full">
+
+      {/*------------- Autherised Dealers part------------  */}
+
+       <div className="classname pt-20 ">
+
+        <div className="Authorized h-80 w-320 ml-30 text-center pt-10  relative bg-white ">
+            <h1 className='text-[36px] font-bold pb-3'>Authorized Dealers</h1>
+            <p className='text-[18px]'>We proudly partner with industry-leading brands to deliver the best gear on the market.</p>
+
+
+            <div className="img1 absolute left-120 bottom-18">
+            <img src={MBI} alt="" className='h-10' absolute  />
+            </div>
+
+
+            <div className="img2 absolute right-120 bottom-15">
+            <img src={Daemo} alt="" className='h-12' />
+            </div>
+
+          </div>
+        </div>
+
+      {/*----------------- Meet the Team Members--------- */}
+
+        <div className="Team-Members pt-20 text-center">
+          <h1 className='text-[36px] font-bold ml-'> Meet Our Teams </h1>
+          <p className='w-200 ml-[23%] text-[18px] pt-4 '>At Aussies Buckets , Our Experienced and dedicated team is committed to delievering top-quality exvavator attachments and exceptional customer services</p>
+
+          <div className="partners-card">
+
+             <div className="card1">
+                
+            </div>
+            <div className="card2"></div>
+            <div className="card3"></div>
+          </div>
+
+        </div>
+
+
+      </div>
 
 
 
