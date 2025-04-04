@@ -5,12 +5,15 @@ import { Route, Routes } from "react-router-dom";
 import { Testimonial } from "./testi/Testimonial";
 import Footer from "./Footer_Component/Footer";
 
+import { Whyab } from "./Whyab_Component/whyab";
+
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/testi" element={<Testimonial />} />
+        <Route path="/why-ab" element={<Whyab />} />
       </Routes>
       <Footer />
     </>
