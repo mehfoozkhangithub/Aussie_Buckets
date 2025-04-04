@@ -56,7 +56,7 @@ export const Whyab = () => {
 
           <div className="partners-card">
 
-             <div className="card1">
+             <div className="card1"> 
                 
             </div>
             <div className="card2"></div>
