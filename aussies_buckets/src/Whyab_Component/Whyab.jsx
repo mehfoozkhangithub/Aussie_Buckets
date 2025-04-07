@@ -4,7 +4,8 @@ import MBI from "../assets/MBI.png"
 import Daemo from "../assets/Daemo.png"
 import Card from './Card'
 import { Partners2 } from './Partners2'
-
+import { CoreValues } from './CoreValues'
+import { Selling } from './Selling'
 
 export const Whyab = () => {
   return (
@@ -27,7 +28,7 @@ export const Whyab = () => {
     </div>
 
 
-      <div className="partners bg-[rgb(198,196,196)] h-300% w-full">
+      <div className="partners bg-[rgb(198,196,196)] h-300% w-full border-b-[10px] border-yellow-500">
 
       {/*------------- Autherised Dealers part------------  */}
 
@@ -51,11 +52,11 @@ export const Whyab = () => {
         </div>
 
       {/*----------------- Meet the Team Members--------- */}
-      {/*----------------- Meet the Team Members--------- */}
-      {/*----------------- Meet the Team Members--------- */}
       
        <Card />
       <Partners2/>
+      <CoreValues/>
+      <Selling/>
 
       </div>
 

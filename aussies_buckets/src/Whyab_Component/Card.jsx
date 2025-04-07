@@ -31,7 +31,7 @@ const Card = () => {
         <p className='w-200 ml-[23%] text-[18px] pt-4 '>At Aussies Buckets , Our Experienced and dedicated team is committed to delievering top-quality exvavator attachments and exceptional customer services</p>
       </div>
 
-      <div className='Cards '>
+      <div className='Cards'>
 
           {partners.length > 0 ? (
 
