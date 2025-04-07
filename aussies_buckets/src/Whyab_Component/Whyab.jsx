@@ -2,6 +2,8 @@ import React from 'react'
 import homie from "../assets/Homeabt.svg"
 import MBI from "../assets/MBI.png"
 import Daemo from "../assets/Daemo.png"
+import Card from './Card'
+import { Partners2 } from './Partners2'
 
 
 export const Whyab = () => {
@@ -25,7 +27,7 @@ export const Whyab = () => {
     </div>
 
 
-      <div className="partners bg-[rgb(198,196,196)] h-200 w-full">
+      <div className="partners bg-[rgb(198,196,196)] h-300% w-full">
 
       {/*------------- Autherised Dealers part------------  */}
 
@@ -49,22 +51,9 @@ export const Whyab = () => {
         </div>
 
       {/*----------------- Meet the Team Members--------- */}
-
-        <div className="Team-Members pt-20 text-center">
-          <h1 className='text-[36px] font-bold ml-'> Meet Our Teams </h1>
-          <p className='w-200 ml-[23%] text-[18px] pt-4 '>At Aussies Buckets , Our Experienced and dedicated team is committed to delievering top-quality exvavator attachments and exceptional customer services</p>
-
-          <div className="partners-card">
-
-             <div className="card1"> 
-                
-            </div>
-            <div className="card2"></div>
-            <div className="card3"></div>
-          </div>
-
-        </div>
-
+      
+       <Card />
+      <Partners2/>
 
       </div>
 
