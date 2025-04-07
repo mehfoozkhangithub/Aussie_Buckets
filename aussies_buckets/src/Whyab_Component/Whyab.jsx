@@ -52,6 +52,7 @@ export const Whyab = () => {
 
       {/*----------------- Meet the Team Members--------- */}
       {/*----------------- Meet the Team Members--------- */}
+      {/*----------------- Meet the Team Members--------- */}
       
        <Card />
       <Partners2/>
