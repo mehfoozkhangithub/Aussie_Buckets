@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../Utils/Logo.svg";
@@ -7,6 +7,7 @@ import hams from "../Utils/ham.jpg";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [sidebar, setSidebar] = useState(false)
   return (
     <>
       <header className="flex  top-0 mx-auto items-center justify-between  ">
@@ -40,6 +41,7 @@ export const Navbar = () => {
             alt=""
             className="w-12 h-9 
           "
+          onClick={() => setSidebar(!sidebar)}
           />
         </div>
 
@@ -83,8 +85,16 @@ export const Navbar = () => {
       <div className="boundries w-full h-1  bg-yellow-300"></div>
 
       {/* ....                   sidebar................................................... */}
-  <div className="w-170 min-h-screen border-2">
+      
+      <div className={`absolute right-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
+            sidebar ? "opacity-100 " : "opacity-0"
+          }`}>
+  <div className="w-170 min-h-screen border-2  right-0">
+   
+    
     <h1 className="text-center text-[48px] font-semibold mt-7">Quick Start</h1>
+
+
  <form action="" className="mt-10"   >
   <div className="input-head grid grid-cols-2 gap-5 text-[16px] justify-items-center">
   <div>
@@ -99,18 +109,24 @@ export const Navbar = () => {
   <div>
   <input type="text" name="text" placeholder="First name" className="border-1 p-3 capitalize w-73 mr-8" />
   </div>
-{/* some thing */}
-
-  </div>
+ </div>
 
   <textarea name="message" placeholder="Question or custom requirements" className="border-1 w-151 mt-7 mx-9 p-4"></textarea>
-  <div>
-    <a href="#" className="w-button"> Add a product</a>
+
+  <div className=" add-item mx-10 my-3">
+    <h1 className="my-3 text-red-600 text-[16px]">Please select at least one product to proceed</h1>
+<button className="w-151 h-12 bg-gray-200 border-1 text-[16px] font-bold rounded-sm">Add a product</button>
+  </div>
+
+  <div className="sumbit">
+  <input type="submit" value="Submit" className="w-151 h-12 mx-10 my-10 text-[16px] bg-amber-300 rounded-sm" />
   </div>
  
  </form>
+
+ <h2 className="mx-10 text-[16px] text-gray-400">Add 3 more to get 5% discount </h2>
   </div>
-    
+  </div>
     </>
     
   );
