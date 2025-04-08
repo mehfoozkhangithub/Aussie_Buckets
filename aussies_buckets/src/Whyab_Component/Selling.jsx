@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import Selling2 from './Selling2';
 
 export const Selling = () => {
 
@@ -29,7 +30,7 @@ export const Selling = () => {
         <h1 className='text-center mt-10 text-[36px] font-bold'>Our Unique Selling Points</h1>
         <p className='text-center w-190 ml-[25%] text-[18px] mt-5'>At Aussie Buckets, we pride ourselves on delivering high-quality excavator attachments tailored to meet the diverse needs of our customers, ensuring top-notch performance and durability in every product.</p>
 
-    <div className="Selling_cards grid grid-cols-3 gap-5 px-24 pt-10">
+    <div className="Selling_cards grid grid-cols-3 gap-5 px-24 pt-10 " >
         {
             selling.map((el)=> (
                 <div className='w-110 border-2 p-10 bg-amber-50'>
@@ -41,6 +42,10 @@ export const Selling = () => {
         }
     </div>
 
+    <div>
+
+    </div>
+        <Selling2/>
       </div>
     </>
   )

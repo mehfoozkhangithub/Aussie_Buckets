@@ -6,6 +6,7 @@ import { Testimonial } from "./testi/Testimonial";
 import Footer from "./Footer_Component/Footer";
 
 import { Whyab } from "./Whyab_Component/whyab";
+import { Contact } from "./Contact_Component/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/testi" element={<Testimonial />} />
         <Route path="/why-ab" element={<Whyab />} />
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer />
     </>

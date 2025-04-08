@@ -27,7 +27,7 @@ export const Navbar = () => {
             <Link to="/why-ab">Why AB? </Link>
           </li>
           <li>
-            <Link to="/">Contact </Link>
+            <Link to="/contact">Contact </Link>
           </li>
           <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-7">
             <button>
