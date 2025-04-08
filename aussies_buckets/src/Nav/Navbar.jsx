@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <header className="flex sticky top-0 mx-auto items-center justify-between  ">
+      <header className="flex  top-0 mx-auto items-center justify-between  ">
         <div className="logo">
           <img src={logo} className="my-8 mx-32 h-16 " />
         </div>
@@ -81,6 +81,37 @@ export const Navbar = () => {
         </div>
       </header>
       <div className="boundries w-full h-1  bg-yellow-300"></div>
+
+      {/* ....                   sidebar................................................... */}
+  <div className="w-170 min-h-screen border-2">
+    <h1 className="text-center text-[48px] font-semibold mt-7">Quick Start</h1>
+ <form action="" className="mt-10"   >
+  <div className="input-head grid grid-cols-2 gap-5 text-[16px] justify-items-center">
+  <div>
+  <input type="text" name="text" placeholder="First name" className="border-1 p-3 capitalize w-73 ml-9" />
+  </div>
+  <div>
+  <input type="text" name="text" placeholder="First name" className="border-1 p-3 capitalize w-73 mr-8" />
+  </div>
+  <div>
+  <input type="text" name="text" placeholder="First name" className="border-1 p-3 capitalize  w-73 ml-9" />
+  </div>
+  <div>
+  <input type="text" name="text" placeholder="First name" className="border-1 p-3 capitalize w-73 mr-8" />
+  </div>
+{/* some thing */}
+
+  </div>
+
+  <textarea name="message" placeholder="Question or custom requirements" className="border-1 w-151 mt-7 mx-9 p-4"></textarea>
+  <div>
+    <a href="#" className="w-button"> Add a product</a>
+  </div>
+ 
+ </form>
+  </div>
+    
     </>
+    
   );
 };
