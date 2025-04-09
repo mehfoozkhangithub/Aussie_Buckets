@@ -14,7 +14,7 @@ export const Breadcrumb = () => {
       <div className="crumb mt-11 ml-33 " key={crumb} >
         <Link to='/' className='text-[16px]'>Home <i class="fa-solid fa-angle-right ml-2"></i> </Link>
         <Link to={currentLink} className='font-semibold capitalize'>{crumb}</Link>
-{/* some */}
+
       </div>
     
       

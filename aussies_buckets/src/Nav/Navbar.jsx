@@ -1,9 +1,10 @@
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../Utils/Logo.svg";
 import file from "../Utils/file.png";
 import hams from "../Utils/ham.jpg";
+import cance from "../Utils/cancel.jpg";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,10 +17,10 @@ export const Navbar = () => {
         </div>
         <div className="ul  items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  hidden md:flex ">
           <li>
-            <Link to="/">Product</Link>
+            <Link to="#">Product</Link>
           </li>
           <li>
-            <Link to="/">Industries</Link>
+            <Link to="#">Industries</Link>
           </li>
           <li>
             <Link to="/testi"> Testimonials</Link>
@@ -28,20 +29,21 @@ export const Navbar = () => {
             <Link to="/why-ab">Why AB? </Link>
           </li>
           <li>
-            <Link to="/">Contact </Link>
+            <Link to="#">Contact </Link>
           </li>
-          <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-7">
+          <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-2">
             <button>
-              Quick Quate <i class="fa-solid fa-arrow-right mx-1"></i>
+              Quick Quote <i class="fa-solid fa-arrow-right mx-1"></i>
             </button>
           </div>
 
           <img
+
             src={file}
             alt=""
-            className="w-12 h-9 
+            className="w-12 h-9  
           "
-          onClick={() => setSidebar(!sidebar)}
+          onClick={() => setSidebar(!sidebar) }
           />
         </div>
 
@@ -54,7 +56,7 @@ export const Navbar = () => {
 
         <div
           className={`absolute xl:hidden top-29 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
-            isMenuOpen ? "opacity-100 " : "opacity-0"
+            isMenuOpen ? "opacity-100 " : "opacity-0" 
           }`}
           style={{ transition: "transform 0.3s ease, opacity-0" }}
         >
@@ -68,7 +70,7 @@ export const Navbar = () => {
             <Link to="/testi"> Testimonials</Link>
           </li>
           <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
-            <Link to="/">Why AB? </Link>
+            <Link to="/why-ab">Why AB? </Link>
           </li>
           <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
             <Link to="/">Contact </Link>
@@ -86,12 +88,15 @@ export const Navbar = () => {
 
       {/* ....                   sidebar................................................... */}
       
-      <div className={`absolute right-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
-            sidebar ? "opacity-100 " : "opacity-0"
-          }`}>
-  <div className="w-170 min-h-screen border-2  right-0">
+      <div   className={`absolute   z-40  backdrop-blur-xs  right-0 w-full  flex flex-col items-end gap-6 font-semibold text-lg transform transition-transform ${
+            sidebar ? "opacity-100 " : "opacity-0 "
+          }`}
+         >
+  <div className="w-170  bg-white  min-h-screen border-2 ">
    
-    
+    <div>
+      <img src={cance} alt="" className="w-16 absolute top-3 right-2"  onClick={()=> setSidebar(false)}/>
+    </div>
     <h1 className="text-center text-[48px] font-semibold mt-7">Quick Start</h1>
 
 
