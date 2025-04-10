@@ -11,17 +11,3 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-@what we are writing is the main thing to do something better in the code 
-coding is beeter thean everthing
-not is best
-coding is the best
-#noting is updated
-#noting is store
-#noting is been getting 
-for long time
-it is better to know noting
-and it is not the way to show noting
-why my streaks are not mainting
-why may code is not updateing
-and what is the main reason behind this 
-and what should be do in this situation
