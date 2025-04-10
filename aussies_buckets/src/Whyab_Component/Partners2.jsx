@@ -38,7 +38,7 @@ export const Partners2 = () => {
           <div className="partners-1 mt-8 mb-15">
               {
                 data.map((el ,id) => (
-                  <div key={id} className='flex justify-around w-130 mt-10 align-center  mt-10 '>
+                  <div key={id} className='flex justify-around w-130 mt-10 align-center  '>
                     <img src={el.img} alt="" className='h-50 rounded-[120px]' />
 
                     <div className='mt-14'>

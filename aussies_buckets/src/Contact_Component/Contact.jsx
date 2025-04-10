@@ -1,12 +1,13 @@
 import React from 'react'
 import { Contactpage } from './Contactpage'
+import { Contactpart } from './Contactpart'
 
 export const Contact = () => {
   
   return (
     <>
-      <div className="Contact mt-20 mx-30 bg-[rgb(198,196,196)] flex">
-        <div className="info  w-160 bg-[rgb(198,196,196)]">
+      <div className="Contact mt-20 mx-30 bg-[rgb(198,196,196)]  flex justify-around ">
+        <div className="info  w-160 h-170 bg-[rgb(198,196,196)]">
 
         {/*------------- first info---------------- */}
           <div className="Phone flex justify-evently mt-35 ml-10">
@@ -71,10 +72,13 @@ export const Contact = () => {
 
       <div className="contactpage">
         <Contactpage/>
+        
       </div>
 
-
+      
       </div>
+
+      <Contactpart/>
     </>
   )
 }
