@@ -15,3 +15,9 @@ If you are developing a production application, we recommend using TypeScript an
 coding is beeter thean everthing
 not is best
 coding is the best
+#noting is updated
+#noting is store
+#noting is been getting 
+for long time
+it is better to know noting
+and it is not the way to show noting
