@@ -18,6 +18,8 @@ export const Partners2 = () => {
     catch(err) {
       console.log(err);
     }
+
+    
   }
 
   useEffect(() => {
