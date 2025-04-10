@@ -21,3 +21,7 @@ coding is the best
 for long time
 it is better to know noting
 and it is not the way to show noting
+why my streaks are not mainting
+why may code is not updateing
+and what is the main reason behind this 
+and what should be do in this situation
