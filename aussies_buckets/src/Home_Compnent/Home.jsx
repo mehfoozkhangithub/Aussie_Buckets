@@ -104,26 +104,7 @@ export const Home = () => {
           We offer a comprehensive range of high-quality, 100% purpose-built products, making our heavy equipment the ultimate choice for all Australian operators.</p>
         </div>
       </div>
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
     </>
   )
