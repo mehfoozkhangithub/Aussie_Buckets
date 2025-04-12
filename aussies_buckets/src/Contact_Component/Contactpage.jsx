@@ -57,6 +57,7 @@ export const Contactpage = () => {
                             <option value="general">General Enquiry</option>
                             <option value="sales">Sales Enquiry</option>
                         </select>
+                        
                         <textarea name="" id="" placeholder='Enter the Text' ref={textRef} className='border-1 mt-5 p-3 h-40'></textarea>
 
                         <button className=' w-25 p-3 mt-5 bg-amber-300' type='button' onClick={() => addContact()} >submit</button>
