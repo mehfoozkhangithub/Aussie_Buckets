@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import homeBg from "../assets/Home.webp";
-import marquee from 'react-fast-marquee'
 import Marquee from 'react-fast-marquee';
+import { Excavator } from './Excavator';
+import { KeyStats } from './keyStats';
+import {Industries} from './Industries';
+
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = "Home"
+  })
   return (
+    
     <>
       {/*---------- Full screen div of img------------- */}
       <div className="first_home h-screen bg-cover bg-center relative " style={{ backgroundImage: ` linear-gradient(#000000b3, #000000b3), url(${homeBg})`, }}>
@@ -103,8 +110,24 @@ export const Home = () => {
           <p>‍
           We offer a comprehensive range of high-quality, 100% purpose-built products, making our heavy equipment the ultimate choice for all Australian operators.</p>
         </div>
+
       </div>
+
+
+      {/*-------------- Excavator Cards....----------       */}
+
+      <Excavator/>
+
+      {/*------------ key Stats....-------------- */}
+
+      <KeyStats/>
+
+      {/*----------- Industries-part-------------- */}
+
+      <Industries/>
+
       
+
 
     </>
   )

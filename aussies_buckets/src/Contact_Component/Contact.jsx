@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Contactpage } from './Contactpage'
 import { Contactpart } from './Contactpart'
 
 export const Contact = () => {
-  
+
+  useEffect(() => {
+    document.title = "Contact"
+  })
   return (
     <>
       <div className="Contact mt-20 mx-30 bg-[rgb(198,196,196)]  flex justify-around ">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import homie from "../assets/Homeabt.svg"
 import MBI from "../assets/MBI.png"
 import Daemo from "../assets/Daemo.png"
@@ -8,6 +8,11 @@ import { CoreValues } from './CoreValues'
 import { Selling } from './Selling'
 
 export const Whyab = () => {
+
+  useEffect(() => {
+    document.title = "Why ab"
+  })
+
   return (
     <>
       <div className="history bg-black text-white w-full pt-28  bg-gradient-to-b from-[#090808] via-[#232121] to-[#ded0d0]  ">

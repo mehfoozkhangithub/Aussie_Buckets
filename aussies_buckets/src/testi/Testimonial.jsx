@@ -3,6 +3,11 @@ import axios from 'axios';
 import { Video } from './Video';
 
 export const Testimonial = () => {
+
+    useEffect(() => {
+        document.title = "Testimonials"
+    })
+
     const [data, setData] = useState([]);
     const Api = "https://api-4x2d.onrender.com/test_card"
 
