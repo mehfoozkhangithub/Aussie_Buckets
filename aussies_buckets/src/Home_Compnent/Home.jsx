@@ -21,7 +21,7 @@ export const Home = () => {
         <div className="Attactments text-[30px] text-amber-50 w-full h-90 text-center justify-items-center absolute top-50  ">
 
           <h1 className='w-100'>THE LARGEST SUPPLIER OF
-            <h1 className='text-amber-300 font-bold text-[50px]'>EXCAVATOR ATTACHMENTS</h1>
+            <p className='text-amber-300 font-bold text-[50px]'>EXCAVATOR ATTACHMENTS</p>
             IN AUSTRALIA</h1>
           <p className='w-140 text-[16px]'>As the leading supplier of attachments in Australia, we use modern technology and superior materials to ensure that our products are built to Australian standards and exceed your expectations.</p>
 

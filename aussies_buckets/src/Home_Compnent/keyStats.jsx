@@ -23,6 +23,17 @@ export const KeyStats = () => {
     useEffect(() => {
         fetchData();
     },[])
+
+    // const keyStats =[
+    //     {
+    //         id: 1,
+    //         img: "https://cdn.prod.website-files.com/66b04d5d579de4c891b7d35c/66b41d9176655b34d4bdb6ef_Steel%20Grade%20Available.svg",
+    //         value: 7450,
+    //         suffix: "+",
+    //         h1: "Steel Grades Available",
+    //         p: "Our products are fully customisable with various steel grades available depending on customer preference and application. Our selection includes HARDOX (Europe), NM (China) and Bisalloy (Australia)"
+    //     }
+    // ]
     
   return (
     <>
@@ -34,11 +45,11 @@ export const KeyStats = () => {
                     <div key={id} className='flex border-2 gap-5 p-5' >
                         <img src={el.img} alt="" className='h-30 p-3 ' />
                             <div className='text-[20px]    '>
-                                <Countup end={el.value} duration={5} separation=","  className='text-[24px] font-bold text-black'/>
+                                <Countup end={el.value} duration={5}  className='text-[24px] font-bold text-black'/>
                                 <span className=' text-red-600 font-bold text-2xl'>{el.suffix}</span>
                                 
                                 <h1 className='text-[24px] font-bold text-black'>{el.h1}</h1>
-                                <p className='text-[20px] text-black '>{el.p}</p>
+                                <p className='text-[20px] text-black '>{el.p}</p>2q
                             </div>
                        
                     </div>

@@ -3,7 +3,7 @@ import React from 'react'
 export const Industries = () => {
   return (
     <>
-        <div className="industries flex justify-around mx-20 mb-10">
+        <div className="industries flex justify-around mx-20 mt-20 mb-10">
             <div className="info w-150 mt-8">
                 <h1 className='text-[32px] mb-5 font-bold'>Expertise Across Every Industry</h1>
                 <p className='text-[18px]'>We pride ourselves on bringing attachments to market built from the ground up with purpose and application in mind. We want to provide our community with the best solutions to solve the most challenging applications, and put attachment efficiency and longevity at the forefront of each and every design.</p>
