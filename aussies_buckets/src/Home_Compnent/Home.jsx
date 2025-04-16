@@ -4,6 +4,8 @@ import Marquee from 'react-fast-marquee';
 import { Excavator } from './Excavator';
 import { KeyStats } from './keyStats';
 import {Industries} from './Industries';
+import { Attachments } from './Attachments';
+import { Choose } from './Choose';
 
 
 export const Home = () => {
@@ -125,6 +127,15 @@ export const Home = () => {
       {/*----------- Industries-part-------------- */}
 
       <Industries/>
+
+      {/*----------- <Attachments/>--------------- */}
+
+       <Attachments/> 
+
+      {/* -----------Choose----------------- */}
+
+      <Choose/>
+
 
       
 
