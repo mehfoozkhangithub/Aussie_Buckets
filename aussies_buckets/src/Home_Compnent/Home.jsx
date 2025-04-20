@@ -8,6 +8,7 @@ import { Attachments } from './Attachments';
 import { Choose } from './Choose';
 import { Customers } from './Customers';
 import { Rating } from './Rating';
+import {FAQ} from './FAQ'
 
 
 export const Home = () => {
@@ -147,6 +148,11 @@ export const Home = () => {
       {/*------------- Ratings and Reviews----------- */}
 
       <Rating/>
+
+      {/* -----------FAQ Questions---------------- */}
+  
+       <FAQ/>   
+
 
 
 
