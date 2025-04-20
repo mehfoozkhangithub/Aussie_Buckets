@@ -6,6 +6,8 @@ import { KeyStats } from './keyStats';
 import {Industries} from './Industries';
 import { Attachments } from './Attachments';
 import { Choose } from './Choose';
+import { Customers } from './Customers';
+import { Rating } from './Rating';
 
 
 export const Home = () => {
@@ -135,6 +137,17 @@ export const Home = () => {
       {/* -----------Choose----------------- */}
 
       <Choose/>
+
+      <hr className=''/>  
+
+      {/* -------------Aussies Customers----------- */}
+
+      <Customers/>
+
+      {/*------------- Ratings and Reviews----------- */}
+
+      <Rating/>
+
 
 
       

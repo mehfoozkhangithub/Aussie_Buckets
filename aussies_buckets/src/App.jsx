@@ -8,6 +8,7 @@ import Footer from "./Footer_Component/Footer";
 import { Whyab } from "./Whyab_Component/whyab";
 import { Contact } from "./Contact_Component/Contact";
 import { Home } from "./Home_Compnent/Home";
+import { Customers } from "./Home_Compnent/Customers";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/testi" element={<Testimonial />} />
         <Route path="/why-ab" element={<Whyab />} />
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/youtube" element={<Customers/>} />
       </Routes>
      
       <Footer />
