@@ -27,8 +27,11 @@ export const Video = () => {
             <div key={id} className="text-center h-110 bg-gray-200 rounded-xl">
               <img src={el.img} alt="" className="rounded-xl" />
               <img src={el.star} alt="" className="ml-34 w-35 mt-5" />
-              <h1 className="text-[24px] font-[700] mt-2 ">{el.h2}</h1>
+              <div>
+<h1 className="text-[24px] font-[700] mt-2 ">{el.h2}</h1>
               <p className="mt-3 text-[16px] font-[400]">{el.hr}</p>
+              </div>
+              
             </div>
           </>
         ))}

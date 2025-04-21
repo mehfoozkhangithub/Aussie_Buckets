@@ -7,6 +7,7 @@ import Footer from "./Footer_Component/Footer";
 
 import { Whyab } from "./Whyab_Component/whyab";
 import { Breadcrumb } from "./BreadCrumb/Breadcrumb";
+import { Industries } from "./Industry/Industries";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/testi" element={<Testimonial />} />
         <Route path="/why-ab" element={<Whyab />} />
+        <Route path="/industries" element={<Industries />} />
       </Routes>
       <Footer />
     </>
