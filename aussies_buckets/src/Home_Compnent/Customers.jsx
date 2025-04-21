@@ -81,7 +81,7 @@ export const Customers = () => {
               {
                 open && (
                   <div className="parent fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-                    
+                   
                     <div className="child1">
                       <button onClick={toggleButton}>X</button>
                       <iframe width="560" height="315" src="https://youtu.be/hupPJfat3L0?si=RmszaX0OCuS0QUDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

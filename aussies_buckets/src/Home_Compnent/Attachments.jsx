@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 export const Attachments = () => {
     const [attachments, setAttachments] = useState([]);
     const [content, setContent] = useState(0);
+    const [animate, setAnimate] = useState(false);
 
     const Api = "https://api-4x2d.onrender.com/attachments";
     const fetchData = async () => {
@@ -22,6 +23,25 @@ export const Attachments = () => {
     }, [])
 
 
+    const defaultStyle = {
+        borderLeft: '7px solid white', 
+        backgroundColor: 'rgba(0, 0, 0, 0)'
+    };
+
+    const activeStyle = {
+        borderLeft: '4px solid yellow',
+        color: 'black',
+       
+    }
+
+    useEffect(() => {
+        // Trigger animation when content changes
+        setAnimate(true);
+        const timeout = setTimeout(() => setAnimate(false), 400); // reset after animation
+        return () => clearTimeout(timeout);
+      }, [content]);
+
+
     return (
         <>
             <div className='parent mt-20 bg-gray-200 py-10'>
@@ -31,18 +51,21 @@ export const Attachments = () => {
 
 
 
-                    <div className="img  ">
+                    <div className="">
                         {attachments.length > 0 &&
-                            <img src={attachments[content].img} alt={attachments[content].h1} className='h-130 w-150 ' />}
+                            <img src={attachments[content].img} alt={attachments[content].h1}
+                            className={`h-130 w-150 object-cover rounded-md transition-all duration-500 ease-in-out ${
+                                animate ? 'opacity-0 ' : 'opacity-100 '
+                            }`} />}
 
                     </div>
 
                     <div>
                     {
                         attachments.map((el, id) => (
-                            <div className='content cursor-pointer border-l-gray-400 border-l-4 hover:border-l-amber-300 pl-10 flex flex-row py-[13px]' >
+                            <div className='content cursor-pointer border-l-gray-400 border-l-4  pl-10 flex flex-row py-[13px]' style={content === id ? activeStyle : defaultStyle} >
 
-                                <div className=" " key={id} onClick={() => setContent(id)}>
+                                <div className=" " key={id} onClick={() => setContent(id)} >
                                     <h1 className='text-[24px] font-bold mt-3'>{el.h1}</h1>
                                     <p className='w-140 text-[16px] mt-3'>{el.p}</p>
                                 </div>
