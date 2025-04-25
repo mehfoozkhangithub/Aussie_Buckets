@@ -97,8 +97,7 @@ export const Customers = () => {
                 setOpen(false);
                 setSelectedCard(null);
               }}
-              className='text-white absolute top-10 right-5 text-[40px] cursor-pointer'
-            >
+              className='text-white absolute top-10 right-5 text-[40px] cursor-pointer'>
               X
             </button>
 
