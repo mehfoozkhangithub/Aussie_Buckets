@@ -5,7 +5,7 @@ import abouts from '../Utils/about.webp'
 export const Industries = () => {
   return (
    <>
-   <div className="head mt-10 w-full bg-gray-100">
+   <div className="head mt-10 w-full bg-gray-100 ">
     <div className="about flex">
         <div className="about-us w-170 mx-32 my-20">
             <h1 className='text-[38px] font-bold'>Industries</h1>

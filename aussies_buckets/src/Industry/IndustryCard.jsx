@@ -6,6 +6,7 @@ export const IndustryCard = () => {
   const [search, setSearch] = useState('');
   const [options, setOptions] = useState('')
 
+
   console.log(search);
 
 
@@ -36,9 +37,12 @@ export const IndustryCard = () => {
             onChange={(e) => setSearch(e.target.value)}
           />
           <label className='ml-13 p-3 border-1 border-gray-300'> Category</label>
+          
+          {/* ..................................categories input............................... */}
           <input type="text" className='w-120  border-1 border-gray-300 p-2.5' />
-          <select onChange={(e) => setOptions(e.target.value)} className='absolute right-17 w-100  top-3 text-gray-500 text-[18px] '>
-          <option value="" > All</option>
+
+          <select placeholder='None' onChange={(e) => setOptions(e.target.value)} className='absolute right-17  w-100  top-3 text-black text-[18px] '>
+          <option value="" >All </option>
             <option value="Bucket">Port & Underwear Works</option>
             <option value="Tunnelling" >Tunnelling</option>
             <option value="Trenching">Trenching</option>

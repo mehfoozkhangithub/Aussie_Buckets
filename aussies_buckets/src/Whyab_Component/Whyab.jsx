@@ -7,7 +7,7 @@ import Daemo from "../assets/Daemo.png"
 export const Whyab = () => {
   return (
     <>
-      <div className="history bg-black text-white w-full pt-28  bg-gradient-to-b from-[#090808] via-[#232121] to-[#ded0d0]  ">
+      <div className="history bg-black text-white mt-10 w-full pt-28  bg-gradient-to-b from-[#090808] via-[#232121] to-[#ded0d0]  ">
 
         <div className="part-1">
           <p className='ml-[46%] text-[16px] font-[800] text-yellow-300'>Our History</p>

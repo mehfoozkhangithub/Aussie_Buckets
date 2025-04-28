@@ -137,8 +137,8 @@ useEffect(() => {
       
       
       {sidebar && (
-  <div className="absolute top-0 backdrop-blur-xs right-0 w-full flex flex-col items-end gap-6 font-semibold text-lg transform transition-transform opacity-100">
-    <div className="w-170 bg-white min-h-screen border-2 ">
+  <div className="absolute top-0 z-10 backdrop-blur-xs right-0 w-full flex flex-col items-end gap-6 font-semibold text-lg">
+    <div className="w-170 bg-white min-h-screen border-x-2 ">
       <div>
         <img
           src={cance}
