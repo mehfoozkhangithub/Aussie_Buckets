@@ -24,16 +24,16 @@ export const Testimonial = () => {
     return (
 
         <>
-            <div className=' w-full h-[500px]  mt-2 relative '>
-                <iframe frameBorder="0" allowFullScreen="" allow='autoplay; fullscreen' src="https://player.vimeo.com/video/996419285?background=1" className='w-full h-[100%]   ' ></iframe>
+            <div className=' w-full h-[500px]  mt-2 relative  max-md:mt-0 max-md:h-[250px]'>
+                <iframe frameBorder="0" allowFullScreen="" allow='autoplay; fullscreen' src="https://player.vimeo.com/video/996419285?background=1" className='w-full h-[100%]    ' ></iframe>
 
-                <div className='absolute top-50 left-30 font-bold'>
+                <div className='absolute top-50 left-30 font-bold max-md:top-20'>
                     <h1 className='text-[38px] text-white   w-250'>Hear what Our Customer Say</h1>
                 </div>
             </div>
 
             <Video />
-            <div className='grid grid-cols-2 mb-15  ml-25 mt-20  gap-5'>
+            <div className='grid grid-cols-2 mb-15  ml-25 mt-20  gap-5 max-md:grid-cols-1 max-md:ml-15'>
 
 
                 {

@@ -31,17 +31,25 @@ export const IndustryCard = () => {
     <>
 
       <div className="forms-about ">
-        <form action="#" className='mx-32 my-20 relative'>
-          <label className='p-3 border-1 border-gray-300 '> keyword </label>
-          <input type="text" name='keyword' placeholder='None' className='w-130 border-1 border-gray-300 p-2.5'
+        <form action="#" className='mx-32 my-20 h-40 relative max-md:mx-10'>
+          <div className="form-input">
+            <div className="first-input">
+            <label className='p-3 border-1 border-gray-300 max-md:mb-20 '> keyword </label>
+          <input type="text" name='keyword' placeholder='None' className='w-130 border-1 border-gray-300 p-2.5 max-md:w-140 '
             onChange={(e) => setSearch(e.target.value)}
           />
-          <label className='ml-13 p-3 border-1 border-gray-300'> Category</label>
+            </div>
+            <div className="second-input max-md:mt-6 ">
+            <label className='ml-13 p-3 border-1 border-gray-300 max-md:ml-0 '> Category</label>
           
-          {/* ..................................categories input............................... */}
-          <input type="text" className='w-120  border-1 border-gray-300 p-2.5' />
+         
+          <input type="text" className='w-120  border-1 border-gray-300 p-2.5 max-md:w-140 ' />
+            </div>
+          </div>
+          
+         
 
-          <select placeholder='None' onChange={(e) => setOptions(e.target.value)} className='absolute right-17  w-100  top-3 text-black text-[18px] '>
+          <select placeholder='None' onChange={(e) => setOptions(e.target.value)} className='absolute right-17  w-100  top-3 text-black text-[18px] max-md:top-20 max-md:right-17  max-md:w-120'>
           <option value="" >All </option>
             <option value="Bucket">Port & Underwear Works</option>
             <option value="Tunnelling" >Tunnelling</option>
@@ -65,7 +73,7 @@ export const IndustryCard = () => {
       </div>
 
 
-      <div className='cards grid grid-cols-4 mt-30 mr-30 ml-30 gap-10 mb-10'>
+      <div className='cards grid grid-cols-4 mt-30 mr-30 ml-30 gap-10 mb-10 max-md:grid-cols-2 max-md:ml-10 max-md:mr-10'>
 
 
         {

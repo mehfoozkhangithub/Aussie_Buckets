@@ -33,9 +33,9 @@ useEffect(() => {
 }, [])
   return (
     <>
-      <header className="flex relative   border-b-4 border-amber-300  mx-auto items-center justify-between  ">
+      <header className="flex relative   border-b-4 border-amber-300  mx-auto items-center justify-between  max-md:h-30 ">
         <div className="logo">
-          <img src={logo} className="my-8 mx-32 h-16 " />
+          <img src={logo} className="my-8 mx-32 h-16    max-md:hidden" />
         </div>
         <div className="ul  items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  hidden md:flex  ">
           <li  onClick={() => setProd(!prod)} className="cursor-pointer list-none relative group ">
@@ -63,7 +63,7 @@ useEffect(() => {
 
             src={file}
             alt=""
-            className="w-12 h-9  
+            className="w-12 h-9 max-md:block 
           "
           onClick={() => setSidebar(!sidebar) }
           />
@@ -77,29 +77,29 @@ useEffect(() => {
         />
 
         <div
-          className={`absolute xl:hidden top-29 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
+          className={`absolute xl:hidden z-120 top-29 left-0 w-full bg-white flex flex-col items-center gap-5 font-semibold text-lg transform transition-transform max-md:gap-1 max-md:h-92 max-md:font-normal ${
             isMenuOpen ? "opacity-100 " : "opacity-0" 
           }`}
           style={{ transition: "transform 0.3s ease, opacity-0" }}
         >
-          <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
+          <li className="list-none w-full text-left p-4 cursor-pointer max-md:p-2 max-md:ml-20 ">
             <Link to="/">Product</Link>
           </li>
-          <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
-            <Link to="/">Industries</Link>
+          <li className="list-none w-full text-left p-4   cursor-pointer max-md:p-2 max-md:ml-20 ">
+            <Link to="/industries">Industries</Link>
           </li>
-          <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
+          <li className="list-none w-full text-left p-4   cursor-pointer max-md:p-2 max-md:ml-20 ">
             <Link to="/testi"> Testimonials</Link>
           </li>
-          <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
+          <li className="list-none w-full text-left p-4  cursor-pointer max-md:p-2 max-md:ml-20 ">
             <Link to="/why-ab">Why AB? </Link>
           </li>
-          <li className="list-none w-full text-left p-4 hover:bg-sky-400 hover:text-white transition-all cursor-pointer">
+          <li className="list-none w-full text-left p-4  cursor-pointer max-md:p-2  max-md:ml-20 ">
             <Link to="/">Contact </Link>
           </li>
-          <div className='w-130 h-13  text-center bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium "'>
+          <div className='w-164 h-13  text-center bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium max-md:p-3'>
             Quick Quate
-            <button>
+            <button >
               {" "}
               <i class="fa-solid fa-arrow-right mx-1"></i>
             </button>
@@ -137,7 +137,7 @@ useEffect(() => {
       
       
       {sidebar && (
-  <div className="absolute top-0 z-10 backdrop-blur-xs right-0 w-full flex flex-col items-end gap-6 font-semibold text-lg">
+  <div className="absolute top-0 z-10 backdrop-blur-xs right-0 w-full flex flex-col items-end gap-6 font-semibold text-lg ">
     <div className="w-170 bg-white min-h-screen border-x-2 ">
       <div>
         <img
