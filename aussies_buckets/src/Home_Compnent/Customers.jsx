@@ -51,14 +51,14 @@ export const Customers = () => {
   
   return (
     <>
-      <div className="Customers h-200 mx-30 mt-20">
-        <h1 className='text-[36px] font-bold text-center'>What Our Customers Say</h1>
-        <p className='mb-10 text-[18px] text-center w-202 ml-57'>Discover how our products and services have made a difference for professionals across various industries. Watch real customer stories and see why we’re a trusted choice for quality and reliability</p>
+      <div className="Customers h-200 mx-30 mt-20 max-sm:h-410 max-sm:mx-2">
+        <h1 className='text-[36px] font-bold text-center max-sm:w-100 max-sm:text-[30px] max-sm:mx-0 '>What Our Customers Say</h1>
+        <p className='mb-10 text-[18px] text-center w-202 ml-57 max-sm:ml-5 max-sm:w-90'>Discover how our products and services have made a difference for professionals across various industries. Watch real customer stories and see why we’re a trusted choice for quality and reliability</p>
 
-        <div className="Cards flex justify-between gap-8 ">
+        <div className="Cards flex justify-between gap-8 max-sm:block">
           {
             Cards.map((el, id) => (
-              <div key={id} className='bg-gray-200 h-120 relative '>
+              <div key={id} className='bg-gray-200 h-120 relative max-sm:mt-6 max-sm:mx-4 max-sm:h-110'>
 
                 <Link>
                   <img
@@ -71,7 +71,7 @@ export const Customers = () => {
                   />
 
                   <div>
-                    <img src={el.video} alt="" className='h-12 absolute bottom-79 left-45 rounded-[70px]' />
+                    <img src={el.video} alt="" className='h-12 absolute bottom-79 left-45 rounded-[70px] max-sm:top-25 max-sm:left-40' />
                   </div>
 
                 </Link>
@@ -91,27 +91,33 @@ export const Customers = () => {
         {/* ------Modal------- */}
 
         {open && selectedCard && (
-          <div className="parent fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+          <div className="parent fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-30 max-sm:w-full max-sm:block  max-sm:h-full max-sm:overflow-hidden ">
+
+           
             <button
               onClick={() => {
                 setOpen(false);
                 setSelectedCard(null);
               }}
-              className='text-white absolute top-10 right-5 text-[40px] cursor-pointer'>
+              className='text-white absolute top-10 right-5 text-[40px] cursor-pointer  max-sm:left-90 max-sm:bottom-200  max-sm:overflow-hidden max-sm:border-2-white z-3'>
               X
             </button>
-
-            <div className="child1">
+            <div className='max-sm:w-full max-sm:h-full border-white border-3 max-sm:overflow-hiddenx h-full w-full absolute  '>
+            <div className="child1 absolute top-30 left-93 max-sm:h-60 max-sm:ml-0 max-sm:mx-1 max-sm:overflow-hidden max-sm:absolute max-sm:top-70 max-sm:left-0 max-sm:w-full">
+               
               <iframe
                 width="800"
                 height="450"
+          
                 src={getYouTubeEmbedUrl(selectedCard.youtube)}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
+                className='max-sm:w-full max-sm:h-full'
               ></iframe>
+            </div>
             </div>
           </div>
         )}

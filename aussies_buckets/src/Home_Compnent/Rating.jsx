@@ -24,10 +24,10 @@ export const Rating = () => {
 
   return (
     <>
-      <div className="Ratings text-center bg-gray-200 py-15">
+      <div className="Ratings text-center bg-gray-200 py-15 max-sm:h-270">
 
-          <h1 className='text-[36px] font-bold w-150 justify-self-center'>Trusted by Industry Experts Across Australia</h1>
-          <p className='w-187 justify-self-center text-[18px] mt-5'>Join hundreds of satisfied clients who trust Aussie Buckets for their excavator attachment needs. From local projects to nationwide operations, we’re proud to be the partner you can rely on. 
+          <h1 className='text-[36px] font-bold w-150 justify-self-center max-sm:w-100'>Trusted by Industry Experts Across Australia</h1>
+          <p className='w-187 justify-self-center text-[18px] mt-5 max-sm:w-90'>Join hundreds of satisfied clients who trust Aussie Buckets for their excavator attachment needs. From local projects to nationwide operations, we’re proud to be the partner you can rely on. 
           <span className='bg-amber-400'>We have 229+ reviews on Google with a rating of 4.7/5!</span></p>
           <img src="https://cdn.prod.website-files.com/66b04d5d579de4c891b7d35c/67bfe3daf155f4901541eb7f_Google-Review-Logo-1.png" alt="" className='h-15 justify-self-center mt-5'/>
 

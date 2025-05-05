@@ -49,30 +49,32 @@
             ]
         return (
             <>
-            <div className="parent h-180 bg-gray-200 px-20 pt-10 border-b-13 border-amber-300">
-                <div className="child text-center text-[36px] font-bold">
+            <div className="parent h-180 bg-gray-200 px-20 pt-10 border-b-13 border-amber-300 max-sm:px-2 max-sm:h-200">
+                <div className="child text-center text-[36px] font-bold max-sm:w-100 max-sm:px-2">
                     <h1>Frequently Asked Questions</h1>
                 </div>
 
-                <div className="questionpart ml-70 ">
+                <div className="questionpart ml-70 max-sm:ml-3 ">
                     {
                         questions.map((el, id) => (
                             <div key={id} className=''>
 
-                                <button className=' flex justify-between cursor-pointer text-[20px] w-200 mt-10 font-bold border-b-2' onClick={() => setActiveQues(activeQues === el.id ? null : el.id)}>
+                                <button className=' flex justify-between cursor-pointer text-[20px] w-200 mt-10 font-bold border-b-2 max-sm:w-90 max-sm:text-[17px] max-sm:text-start max-sm:cursor-pointer' onClick={() => setActiveQues(activeQues === el.id ? null : el.id)}>
 
                                     {el.question}
                                     {activeQues === el.id ? <FaMinus /> : <FaPlus />}
 
                                 </button>
 
-                                    <AnimatePresence className=''>
+                                    <AnimatePresence >
                                         {activeQues === el.id && (
-                                            <motion.div className='text-[16px] w-200 mt-5 '
+                                            <motion.div className='text-[16px] w-90 mt-5 max-sm:text-[14px] max-sm:overflow-hidden'
                                             initial={{ opacity: 0, height: 0 }}
                                             animate={{ opacity: 1, height: "auto" }}
-                                            exit={{ opacity: 0, height: 0 }}>
-                                                <p>{el.answer}</p>
+                                            exit={{ opacity: 0, height: 0 }}
+                                            transition={{ duration: 0.3 }}
+                                            >
+                                                <p className='w-200'>{el.answer}</p>
                                             </motion.div>
                                         )}
                                     </AnimatePresence>

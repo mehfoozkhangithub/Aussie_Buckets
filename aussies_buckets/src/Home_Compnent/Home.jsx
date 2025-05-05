@@ -19,18 +19,18 @@ export const Home = () => {
     
     <>
       {/*---------- Full screen div of img------------- */}
-      <div className="first_home h-screen bg-cover bg-center relative " style={{ backgroundImage: ` linear-gradient(#000000b3, #000000b3), url(${homeBg})`, }}>
+      <div className="first_home h-screen bg-cover bg-center relative max-sm:bg-cover max-sm:bg-center max-sm:h-180  " style={{ backgroundImage: ` linear-gradient(#000000b3, #000000b3), url(${homeBg})`,height: "80vh" }}>
 
         {/* ---------------Attachments Div------------------------- */}
 
-        <div className="Attactments text-[30px] text-amber-50 w-full h-90 text-center justify-items-center absolute top-50  ">
+        <div className="Attactments text-[30px] text-amber-50 w-full h-100 text-center justify-items-center absolute top-30 max-sm:top-30 ">
 
-          <h1 className='w-100'>THE LARGEST SUPPLIER OF
-            <p className='text-amber-300 font-bold text-[50px]'>EXCAVATOR ATTACHMENTS</p>
+          <h1 className='w-100 max-sm:text-[19px]'>THE LARGEST SUPPLIER OF
+            <p className='text-amber-300 font-bold text-[50px] max-sm:text-[40px]'>EXCAVATOR ATTACHMENTS</p>
             IN AUSTRALIA</h1>
-          <p className='w-140 text-[16px]'>As the leading supplier of attachments in Australia, we use modern technology and superior materials to ensure that our products are built to Australian standards and exceed your expectations.</p>
+          <p className='w-140 text-[16px] max-sm:text-[16px] max-sm:w-80 max-sm:mt-3'>As the leading supplier of attachments in Australia, we use modern technology and superior materials to ensure that our products are built to Australian standards and exceed your expectations.</p>
 
-          <div className="buttons-part flex justify-evently mt-5 ">
+          <div className="buttons-part flex justify-evently mt-5 max-sm:flex-col max-sm:items-center max-sm:gap-4 max-sm:mt-10">
 
             <div className="bt w-42 h-13 text-black bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-7">
               <button>
@@ -38,7 +38,7 @@ export const Home = () => {
               </button>
             </div>
 
-            <div className="button-2 border-2 w-42 h-13 py-3 px-5 text-[17px] ml-5">
+            <div className="button-2 border-2 w-42 h-13 py-3 px-5 text-[17px] ml-5 max-sm:ml-0">
               <button>
                 Full Range <i class="fa-solid fa-arrow-right mx-1"></i>
               </button>
@@ -54,7 +54,7 @@ export const Home = () => {
 
 
 
-      <Marquee autoFill={true}  direction="right" pauseOnClick={true} className="flex ">
+      <Marquee autoFill={true}  direction="right" pauseOnClick={true} className="flex max-sm:overflow-hidden">
 
         <div className=" flex my-10  mt-10 ">
           <img
@@ -105,12 +105,12 @@ export const Home = () => {
 
       {/*------------------ Expansive Ranges ------------------*/}
 
-      <div className="Expansive-Ranges flex justify-between h-50 mt-10 mx-30">
-        <div className="Browses font-bold text-[36px] w-160">
+      <div className="Expansive-Ranges flex justify-between h-50 mt-10 mx-30 max-sm:block max-sm:h-150 max-sm:mx-5 max-sm:mt-5 max-sm:overflow-hidden">
+        <div className="Browses font-bold text-[36px] w-160 max-sm:w-106 max-sm:text-[34px]">
           <h1><span className='text-red-600'>Browse Our Expansive Range</span> Of Excavator Buckets, Grabs And Attachments</h1>
         </div>
 
-        <div className="short_info text-[18px] w-150">
+        <div className="short_info text-[18px] w-150 max-sm:w-80 max-sm:text-[19px] max-sm:mt-4 ">
           <p className='mb-5'>Aussie Buckets was born out of necessity to provide hard-working Australians with quality products at a fair and honest price.</p>
           <p>‍
           We offer a comprehensive range of high-quality, 100% purpose-built products, making our heavy equipment the ultimate choice for all Australian operators.</p>

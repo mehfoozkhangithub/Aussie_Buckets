@@ -24,13 +24,13 @@ export const Excavator = () => {
 
   return (
     <>
-        <div className="Card h-150 ">
-            <div className="card1 flex justify-between gap-10 mx-30">
+        <div className="Card h-150 max-sm:h-400 max-sm:mt-0 max-sm:overflow-hidden ">
+            <div className="card1 flex justify-between gap-10 mx-30 max-sm:flex-col max-sm:ml-5 max-sm:w-full ">
                 {
                     excavator.map((el , id) =>(
                         <ul key={id} >
-                            <li><img src={el.img} alt=""className='h-70 w-120' /></li>
-                            <li className='mt-5 text-[24px] font-bold' >{el.h1}</li>
+                            <li><img src={el.img} alt=""className='h-70 w-120 max-sm:w-90' /></li>
+                            <li className='mt-5 text-[24px] font-bold max-sm:mt-4' >{el.h1}</li>
                             <li className='w-100 text-[16px] mt-1 '>{el.p}</li>
                             <li className='border-1 text-[16px] mt-5 p-4 w-60'>{el.button}</li>
                         </ul>

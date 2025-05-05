@@ -4,9 +4,9 @@ import footie from "../assets/Footer.png"
 const Footer = () => {
     return (
         <>
-            <div className='bg-black w-full h-200 text-white mr-10 '  >
+            <div className='bg-black w-full h-200 text-white mr-10 max-sm:bg-black max-sm:h-200% max-sm:my-0 '  >
 
-                <div className="part pt-25 w-100%  flex justify-evenly">
+                <div className="part pt-25 w-100%  flex justify-evenly  max-sm:block  max-sm:bg-black max-sm:border-b-3 border-black-300 max-sm:overflow-hidden max-sm:pl-5">
 
                     <div className="info  ">
                         <img src={footie} alt="" className='w-70 pb-10' />
@@ -15,7 +15,7 @@ const Footer = () => {
                         <p className=' mt-10 w-100 text-[14px]'>The photo's used on our website display various tonnages and are indicative only - to confirm all wear and design elements please discuss your needs with an attachment specialist first. Final design and wear elements may vary across various tonnages.</p>
                     </div>
 
-                    <div className='Quick-links'>
+                    <div className='Quick-links max-sm:mt-10 mb-10'>
                         <h1 className='text-[18px] text-yellow-300 font-bold mb-3'>QUICK LINKS</h1>
                         <p className='mb-4 text-[14px] font-medium'>industries</p>
                         <p className='mb-4 text-[14px] font-medium'>Careers</p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="continue mt-10">
+                    <div className="continue mt-10 max-sm:mt-10 mb-10">
                         <p className='mb-4 text-[14px] font-medium'>Blog</p>
                         <p className='mb-4 text-[14px] font-medium'>Legal</p>
                         <p className='mb-4 text-[14px] font-medium'>Accounts</p>
@@ -41,7 +41,7 @@ const Footer = () => {
                         <p className='mb-4 text-[14px] font-medium'>Performance Range</p>
                     </div>
 
-                    <div className='Industries '>
+                    <div className='Industries max-sm:mt-10'>
                         <h1 className='text-[18px] text-yellow-300 font-bold mb-3'>iNDUSTRIES</h1>
                         <p className='mb-4 text-[14px] font-medium'>Landscapes</p>
                         <p className='mb-4 text-[14px] font-medium'>Demolition</p>
@@ -52,7 +52,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="continue-2 mt-10">
+                    <div className="continue-2 mt-10 max-sm:mt-10 mb-10">
                         <p className='mb-4 text-[14px] font-medium'>Quarries & Mines</p>
                         <p className='mb-4 text-[14px] font-medium'>Tunnelling</p>
                         <p className='mb-4 text-[14px] font-medium'>Utilities</p>
@@ -64,15 +64,15 @@ const Footer = () => {
 
                 </div>
 
-                <hr className='mx-17 my-15' />
+                <hr className='mx-17 my-15 max-sm:hidden max-sm:mx-0 max-sm:my-0 max-sm:bg-black '  />
 
-                <div className="logos-copy mx-17 flex justify-between ">
+                <div className="logos-copy mx-17 flex justify-between max-sm:block max-sm:bg-black max-sm:mx-0 max-sm:my-0  max-sm:pt-5 max-sm:pl-5 ">
                    
                    <div className="copy">
                         <h1>&#169; Aussie Buckets</h1>
                    </div>
 
-                   <div className="logos ">
+                   <div className="logos max-sm:mt-5">
                      <a href=""><i class="fa-brands fa-instagram mr-5 text-[20px]" ></i></a>
                      <a href=""><i class="fa-brands fa-facebook mr-5 text-[20px]"></i></a>
                      <a href=""><i class="fa-brands fa-x-twitter mr-5 text-[20px]"></i></a>

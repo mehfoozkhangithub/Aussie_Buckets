@@ -44,21 +44,21 @@ export const Choose = () => {
 
   return (
     <>
-        <div className="choose overflow-hidden h-280 ">
-            <div className="content mx-30 mt-10">
-                <h1 className='text-center text-[36px] font-bold'>Why Choose Aussie Buckets?</h1>
-                <p className='text-center justify-self-center w-180 text-[16px] mb-5 '>At Aussie Buckets, we combine years of industry experience with cutting-edge technology to deliver exceptional results. Here’s what sets us apart:</p>
+        <div className="choose overflow-hidden h-280 max-sm:mx-3 max-sm:h-400 ">
+            <div className="content mx-30 mt-10 max-sm:mx-3">
+                <h1 className='text-center text-[36px] font-bold max-sm:text-[30px]'>Why Choose Aussie Buckets?</h1>
+                <p className='text-center justify-self-center w-180 text-[16px] mb-5 max-sm:w-90 max-sm:text-[18px]'>At Aussie Buckets, we combine years of industry experience with cutting-edge technology to deliver exceptional results. Here’s what sets us apart:</p>
 
-                <img src="https://cdn.prod.website-files.com/66b04d5d579de4c891b7d35c/6799640b458240f817a8d6ec_02_Team-02.avif" alt="" className='h-50 w-350 object-cover mt-10 ' />
+                <img src="https://cdn.prod.website-files.com/66b04d5d579de4c891b7d35c/6799640b458240f817a8d6ec_02_Team-02.avif" alt="" className='h-50 w-350 object-cover mt-10 max-sm:mx-2 max-sm:w-95 max-sm:h-60' />
             </div>
 
-        <div className="cards grid grid-cols-2 mx-30 text-center gap-10 mt-20">
+        <div className="cards grid grid-cols-2 mx-30 text-center gap-10 mt-20 max-sm:block max-sm:mx-0 max-sm:gap-5 max-sm:mt-10">
             {
                 Card.map((el , id) => (
                     <div key={id}>
                         <img src={el.img} alt="" className='justify-self-center mt-3'/>
-                        <h1 className='text-[20px] font-bold mt-3'>{el.h1}</h1>
-                        <p className='text-[16px] mt-3 '>{el.p}</p>
+                        <h1 className='text-[20px] font-bold mt-3 max-sm:w-100 max-sm:mr-20 max-sm:mx-0'>{el.h1}</h1>
+                        <p className='text-[16px] mt-3 max-sm:w-92 max-sm:mx-3'>{el.p}</p>
                     </div>
                 ))
             }
