@@ -24,22 +24,22 @@ export const Testimonial = () => {
     return (
 
         <>
-            <div className=' w-full h-[500px]  mt-2 relative  max-md:mt-0 max-md:h-[250px]'>
+            <div className=' w-full h-[500px]  mt-2 relative  max-md:mt-0 max-md:h-[250px] max-sm:h-[250px] bg-black'>
                 <iframe frameBorder="0" allowFullScreen="" allow='autoplay; fullscreen' src="https://player.vimeo.com/video/996419285?background=1" className='w-full h-[100%]    ' ></iframe>
 
-                <div className='absolute top-50 left-30 font-bold max-md:top-20'>
-                    <h1 className='text-[38px] text-white   w-250'>Hear what Our Customer Say</h1>
+                <div className='absolute top-50 left-30 font-bold max-md:top-20 max-sm:left-3 max-sm:top-10'>
+                    <h1 className='text-[38px] text-white   w-250 max-sm:w-80 max-sm:text-[34px]'>Hear what Our Customer Say</h1>
                 </div>
             </div>
 
             <Video />
-            <div className='grid grid-cols-2 mb-15  ml-25 mt-20  gap-5 max-md:grid-cols-1 max-md:ml-15'>
+            <div className='grid grid-cols-2 mb-15  ml-25 mt-20  gap-5 max-md:grid-cols-1 max-md:ml-15 max-sm:ml-2'>
 
 
                 {
                     data.map((el, id) => (
                         <>
-                        <div key={id} className="border-1  border-solid  pl-7 pr-7 w-160 h-auto rounded-sm tex text-[16px]  ">
+                        <div key={id} className="border-1  border-solid  pl-7 pr-7 w-160 h-auto rounded-sm tex text-[16px]  max-sm:w-97 ">
                                 <img src={el.img} alt="" className='w-35 h-20 ' />
                                 <p className='mt-0 font-[400]'>{el.para}</p>
                                 <h1 className='mt-3 mb-5 font-[600]'>{el.hd1}</h1>

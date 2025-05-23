@@ -11,7 +11,7 @@ export const Breadcrumb = () => {
     currentLink += `/${crumb}`
     return(
       
-      <div className="crumb mt-11 ml-33 " key={crumb} >
+      <div className="crumb mt-11 ml-33 max-sm:hidden max-md:hidden " key={crumb} >
         <Link to='/' className='text-[16px]'>Home <i class="fa-solid fa-angle-right ml-2"></i> </Link>
         <Link to={currentLink} className='font-semibold capitalize'>{crumb}</Link>
 

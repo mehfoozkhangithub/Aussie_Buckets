@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './nav.css'
 
 import logo from "../Utils/Logo.svg";
 import file from "../Utils/file.png";
@@ -33,9 +34,9 @@ useEffect(() => {
 }, [])
   return (
     <>
-      <header className="flex relative   border-b-4 border-amber-300  mx-auto items-center justify-between  max-md:h-30 ">
+      <header className="flex relative   border-b-4 border-amber-300  mx-auto items-center justify-between  max-md:h-30  ">
         <div className="logo">
-          <img src={logo} className="my-8 mx-32 h-16    max-md:hidden" />
+          <img src={logo} className="my-8 mx-32 h-16    max-md:hidden max-sm:block max-sm:w-50 max-sm:mx-6" />
         </div>
         <div className="ul  items-center mr-30 list-none text-[18px] gap-9 font-serif  font-medium  hidden md:flex  ">
           <li  onClick={() => setProd(!prod)} className="cursor-pointer list-none relative group ">
@@ -53,9 +54,12 @@ useEffect(() => {
           <li>
             <Link to="#">Contact </Link>
           </li>
-          <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium hover:translate-x-2">
-            <button onClick={() => setSidebar(!sidebar)}>
-              Quick Quote <i class="fa-solid fa-arrow-right mx-1"></i>
+          <div className="bt w-42 h-13  bg-yellow-300 px-5 py-3 text-[17px] rounded-sm  font-medium">
+            <button className="cta" onClick={() => setSidebar(!sidebar)}>
+              Quick Quote
+              <div>
+               <i class="fa-solid fa-arrow-right mx-1"></i>
+               </div>
             </button>
           </div>
 
@@ -72,7 +76,7 @@ useEffect(() => {
         <img
           src={hams}
           alt=""
-          className="w-12  md:hidden block text-5xl cursor-pointer mr-12"
+          className="w-12  md:hidden block text-5xl cursor-pointer mr-12 max-sm:mr-3"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
 
