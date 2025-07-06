@@ -8,6 +8,8 @@ import Footer from "./Footer_Component/Footer";
 import { Whyab } from "./Whyab_Component/whyab";
 import { Breadcrumb } from "./BreadCrumb/Breadcrumb";
 import { Industries } from "./Industry/Industries";
+import { CardDetail } from "./SinglePages/CardDetail";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/testi" element={<Testimonial />} />
         <Route path="/why-ab" element={<Whyab />} />
         <Route path="/industries" element={<Industries />} />
+          <Route path="/card/:cardId" element={<CardDetail />} />
       </Routes>
       <Footer />
     </>

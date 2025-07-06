@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export const IndustryCard = () => {
   const [card, setCard] = useState([]);
@@ -86,12 +87,14 @@ export const IndustryCard = () => {
 
           }).map((el, id) => (
             <>
+              <Link to={`/card/${el.id}`} key={el.id} className="block">
               <div key={id} className=''>
                 <img src={el.img} className='w-80 rounded-sm bg-gray-200 max-sm:w-120' />
                 <h2 className='text-[14px] mt-4'>{el.price}</h2>
                 <h1 className='text-[18px] mt-2 text-gray-400 font-semibold'>{el.name}</h1>
                 <button className='p-3 border-1 w-full mt-5 rounded-sm hover:bg-black hover:text-white text-[16px]'>{el.btn} <i class="fa-solid fa-angle-right"></i></button>
               </div>
+              </Link>
             </>
 
           ))

@@ -22,21 +22,13 @@
 
 .cta i {
   position: relative;
-  top: 0;
   margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  /* stroke: #234567; */
-  /* stroke-width: 2; */
+  
+ 
   transform: translateX(-5px);
   transition: all 0.3s ease;
 } 
 
-.cta:hover:before {
-  width: 100%;
-  background: #b1dae7;
-}
 
 .cta:hover i {
   transform: translateX(0);
