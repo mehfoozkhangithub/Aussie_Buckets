@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export const CardDetail = () => {
-  const { cardId } = useParams();
+  const { id } = useParams();
   const [cardDetail, setCardDetail] = useState(null);
 
-  const API = `https://api-4x2d.onrender.com/Ausssies/${cardId}`; // assuming endpoint supports /id
+  const API = `https://api-4x2d.onrender.com/Ausssies/${id}`; // assuming endpoint supports /id
 
   useEffect(() => {
     const fetchDetail = async () => {
@@ -19,13 +19,20 @@ export const CardDetail = () => {
     };
 
     fetchDetail();
-  }, [cardId]);
+  }, [id]);
 
   if (!cardDetail) return <div>Loading...</div>;
 
   return (
-    <div className="mx-30 my-20 bg w-160 ">
-      <img src={cardDetail.img} alt={cardDetail.name} className="w-140 h-137 bg-gray-200 rounded-2xl" />
+    <div className="my-20 mx-30 grid grid-cols-2">
+      <div className="card-img">
+      <img src={cardDetail.img} alt={cardDetail.name} className="w-135 h-137 bg-gray-200 rounded-2xl" />
+      </div>
+
+      <div className="card-info">
+        <h1 className='text-[38px] font-bold mr-50'>{cardDetail.name}</h1>
+      </div>
+      
    
     </div>
   );
