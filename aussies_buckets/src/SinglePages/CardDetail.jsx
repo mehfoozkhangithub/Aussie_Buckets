@@ -30,12 +30,13 @@ export const CardDetail = () => {
       </div>
 
       <div className="card-info">
-        <h1 className='text-[38px] font-bold ml-4'>{cardDetail.name}</h1>
-        <div className='rates flex gap-5'>
-          <img src={cardDetail.starpoint} alt="" className=' w-35 h-34   ' />
-          <h1 className='mt-14 text-[16px] font-normal text-gray-500'>{cardDetail.rates}</h1>
-          <li className='mt-14 ml-4 text-[16px] font-normal  text-gray-500'>{cardDetail.reviews}</li>
+        <h1 className='text-[38px] font-bold ml-4 '>{cardDetail.name}</h1>
+        <div className='rates flex gap-5 absolute top-90'>
+          <img src={cardDetail.starpoint} alt="" className=' w-35 h-38' />
+          <h1 className='mt-16 text-[16px] font-normal text-gray-500'>{cardDetail.rates}</h1>
+          <li className='mt-16 ml-4 text-[16px] font-normal  text-gray-500'>{cardDetail.reviews}</li>
         </div>
+        <h1 className='absolute top-115 left-197 '>{cardDetail.size}</h1>
       </div>
       
    
