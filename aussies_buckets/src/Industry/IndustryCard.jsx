@@ -86,6 +86,7 @@ export const IndustryCard = () => {
 
 
           }).map((el, id) => (
+            
             <>
               <Link to={`/card/${el.id}`} key={el.id} className="block">
               <div key={id} className=''>

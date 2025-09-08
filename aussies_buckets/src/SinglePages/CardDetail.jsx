@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Faq } from './Faq';
 
 export const CardDetail = () => {
   const { id } = useParams();
   const [cardDetail, setCardDetail] = useState(null);
 
-  const API = `https://api-4x2d.onrender.com/Ausssies/${id}`; // assuming endpoint supports /id
+  const API = `https://api-4x2d.onrender.com/Ausssies/${id}`; 
 
   useEffect(() => {
     const fetchDetail = async () => {
@@ -47,8 +48,10 @@ export const CardDetail = () => {
         <h1 className='text-[16px]'>Product also Known as</h1>
         <div className="card-bts grid grid-cols-3 gap-1 ">
          <button className='bg-gray-200 mt-2  w-36 h-9 rounded text-[13px]'>Hydraulic Hammer</button>
-          <button className='bg-gray-200 mt-2  w-36 h-9 rounded text-[13px]'>Hydraulic Hammer</button>
-           <button className='bg-gray-200 mt-2  w-36 h-9 rounded text-[13px]'>Hydraulic Hammer</button>
+          <button className='bg-gray-200 mt-2  w-36 h-9 rounded text-[13px]'>Rock Hammer</button>
+           <button className='bg-gray-200 mt-2  w-36 h-9 rounded text-[13px]'>Concrete Breaker
+            
+           </button>
         </div>
 
       
@@ -90,7 +93,7 @@ export const CardDetail = () => {
 
 
 
-    <div className="about-card bg-gray-200 h-130 my-20 mt-46">
+    <div className="about-card bg-gray-200 h-130  mt-46">
       <div className="about-contain mx-30 grid grid-cols-2 ">
        <div className="iframe mt-20">
 <iframe width="630" height="350" src="https://www.youtube.com/embed/WNB7VN7J0uk?si=lPY8A6xFB8Hzoqvb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -104,6 +107,7 @@ export const CardDetail = () => {
        
       </div>
     </div>
+    <Faq />
 
     </>
   );
